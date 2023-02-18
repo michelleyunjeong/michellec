@@ -1,0 +1,433 @@
+@font-face {
+  font-family: 'analogrotesk';
+  src: url(../font/AnaloGrotesk_Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Medium.ttf);
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 10900px;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+.mb {
+  display: none;
+}
+
+#header {
+  position: fixed;
+  top: 38px;
+  left: 0;
+  z-index: 900;
+  height: 23px;
+  width: 100vw;
+}
+
+#header nav {
+  margin: 0 auto;
+  width: 80vw;
+  height: 23px;
+}
+
+#header nav .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section01 {
+  height: 4000px;
+}
+
+.trigger01 {
+  height: 4000px;
+}
+
+.fix01 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#section01 .pleasescroll {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+ 
+}
+
+#section01 .pic1 {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  opacity: 0;
+}
+
+#section01 .pic1.on {
+  opacity: 1;
+}
+
+#section01 .pic2 {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  opacity: 0;
+}
+
+#section01 .pic2.on {
+  opacity: 1;
+}
+
+#section01 .pic3 {
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  opacity: 0;
+}
+
+#section01 .pic3.on {
+  opacity: 1;
+}
+
+#section01 .pic4 {
+  position: absolute;
+  top: 600px;
+  left: 900px;
+  opacity: 0;
+}
+
+#section01 .pic4.on {
+  opacity: 1;
+}
+
+#section01 .pic5 {
+  position: absolute;
+  top: 200px;
+  left: 1000px;
+  opacity: 0;
+}
+
+#section01 .pic5.on {
+  opacity: 1;
+}
+
+#section01 .pic6 {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  opacity: 0;
+}
+
+#section01 .pic6.on {
+  opacity: 1;
+}
+
+#section01 .pic7 {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  opacity: 0;
+}
+
+#section01 .pic7.on {
+  opacity: 1;
+}
+
+#section01 .pic8 {
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  opacity: 0;
+}
+
+#section01 .pic8.on {
+  opacity: 1;
+}
+
+#section01 .pic9 {
+  position: absolute;
+  top: 300px;
+  left: -100px;
+  opacity: 0;
+}
+
+#section01 .pic9.on {
+  opacity: 1;
+}
+
+#section02 {
+  height: 6000px;
+}
+
+.trigger02 {
+  height: 6000px;
+}
+
+.fix02 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+#section02 .michelleyunjeong {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#section02 .michelleyun {
+  position: absolute;
+  top: -50px;
+  left: -590px;
+  z-index: 100px;
+  transform: translateX(0) scale(90%);
+  width: 1080;
+}
+
+#section02 .michelleyun img {
+  width: 100%;
+}
+
+#section02 .para {
+  position: absolute;
+  top: 358px;
+  left: 600px;
+}
+
+#section02 .cloudstudy {
+  position: absolute;
+  top: 555px;
+  left: 1000px;
+}
+
+#section02 .runningman {
+  position: absolute;
+  top: 600px;
+  left: 590px;
+
+}
+
+#section02 .specialguest {
+  position: absolute;
+  top: 600px;
+  left: 790px;
+ 
+}
+
+#section02 .thefront {
+  position: absolute;
+  top:600px;
+  left: 1000px;
+
+}
+
+#section02 .logo {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}
+
+#section02 .linkedin {
+  position: absolute;
+  top: 550px;
+  left: 1300px;
+}
+
+#section02 .instagram {
+  position: absolute;
+  top: 600px;
+  left: 1300px;
+}
+
+#section02 .tiktok {
+  position: absolute;
+  top: 650px;
+  left: 1300px;
+}
+
+
+#section03 {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.smileyfacesticker {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-59%);
+  scale: 80%;
+}
+
+.emailemail {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translateX(-56%);
+  scale: 80%;
+}
+
+.marquee {
+  margin-left: 180px;
+  margin-top: 800px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  scale: 120%;
+  font-family: 'analogrotesk';
+  font-size: 30px;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 9s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 4.56s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/mobilemenu/hamburger.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #666;
+    border-radius: 8px;
+  }
+  .hamburger.on {
+    background-image: url(../img/mobilemenu/x.png);
+  }
+
+  .menupage {
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 900;
+    background: #000;
+    transition: 1s;
+  }
+  
+  .menupage.on {
+    width: 100vw;
+  }
+
+  .menulist {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menulist ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .menulist li+li {
+    margin-top: 40px;
+  }
+
+  #smooth-content {
+    overflow: visible;
+    width: 100%;
+    height: 1500px;
+    /* height: calc(500vh + 3060px); */
+    /* 전체 높이 */
+  }
+  
+  
+  .section04{
+    height: 1700px;
+  }
+
+  .section04 .michelleyunjeongmobile {
+    top: 0px;
+    left: 0px;
+  }
+
+  .section04 .miche {
+    top: 0px;
+    left: 0px;
+    margin-top: 200px;
+    margin-left: 30px;
+  }
+
+  .section04 .cloudstudy {
+    position: absolute;
+    top: 215px;
+    left: 210px;
+  
+  }
+  .section04 .thefront {
+    top: 0px;
+    left: 0px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .section04 .specialguest {
+    position: absolute;
+    top: 240px;
+    left: 110px;
+
+  }
+
+  .section04 .runningman {
+    position: absolute;
+    top: 240px;
+    left: 230px;
+  }
+
+  .section04 .smileyface {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section04 .email {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

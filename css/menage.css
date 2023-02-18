@@ -1,0 +1,233 @@
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 360vh;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+.mb {
+  display: none;
+}
+
+#section01 {
+  background: white;
+  height: 100vh;
+}
+
+.menu {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+}
+
+.menu li {
+  width: 400px;
+}
+
+.menu .top {
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 360px;
+}
+
+.menu span {
+  width: 10px;
+  height: 1px;
+  background: #000;
+}
+
+.menu span:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.menu span:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.menu .bot {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.menu li.on .bot {
+  height: 200px;
+}
+
+#section01 {
+  height: 300vh;
+  width:100%;
+}
+
+#header {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 900;
+  height: 23px;
+  width: 100vw;
+}
+
+#header nav {
+  margin: 0 auto;
+  width: 80vw;
+  height: 23px;
+}
+
+#header nav .menu2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#section01 .title {
+  position: absolute;
+  top: 110px;
+  left: 140px;
+}
+
+#section01 .menuhover {
+  position: absolute;
+  top: 1000px;
+  left: 100px;
+}
+
+#section01 .menumenu {
+  opacity: 50%;
+}
+
+#section01 .menumenu li+li {
+margin-top: 50px;
+}
+
+#section01 .intro  {
+  left: 70px;
+  }
+
+ #section01 .pages {
+  position: absolute;
+  top: 600px;
+  left: 600px;
+}
+
+#section01 .video {
+  position: absolute;
+  top: 1950px;
+  left: 200px;
+  transform: scale(50%);
+}
+
+#section01 .link {
+  position: absolute;
+  top: 150px;
+  left: 1400px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+  
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/mobilemenu/hamburger.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #666;
+    border-radius: 8px;
+  }
+  .hamburger.on {
+    background-image: url(../img/mobilemenu/x.png);
+  }
+
+  .menupage {
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 900;
+    background: #000;
+    transition: 1s;
+  }
+  
+  .menupage.on {
+    width: 100vw;
+  }
+
+  .menulist {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menulist ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .menulist li+li {
+    margin-top: 40px;
+  }
+
+  #smooth-content {
+    overflow: visible;
+    width: 100%;
+    height: 150vh;
+    /* height: calc(500vh + 3060px); */
+    /* 전체 높이 */
+  }
+
+  .section02 {
+    background: white;
+    height: 200vh;
+  }
+
+  .page {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .video {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%) scale(30%);
+  }
+
+
+}

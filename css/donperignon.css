@@ -1,0 +1,171 @@
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 1450vh;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+.mb{
+  display: none;
+}
+
+#section01 {
+  background: white;
+  height: 100vh;
+}
+
+
+.menu {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+}
+
+.menu li {
+  width: 400px;
+}
+
+.menu .top {
+  height: 100px;
+  /* background: green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .menu .title {
+  height: -500px;
+  background: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.menu .btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 360px;
+}
+
+.menu span {
+  width: 10px;
+  height: 1px;
+  background: #000;
+}
+
+.menu span:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.menu span:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.menu .bot {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+  /* background: blue; */
+}
+
+.menu li.on .bot {
+  height: 200px;
+}
+
+#header {
+  position: fixed;
+  top: 38px;
+  left: 0;
+  z-index: 900;
+  height: 23px;
+  width: 100vw;
+}
+
+#header nav {
+  margin: 0 auto;
+  width: 80vw;
+  height: 23px;
+}
+
+#header nav .menu2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section01 .title {
+  position: absolute;
+  top: 110px;
+  left: 140px;
+}
+
+#section01 .website {
+  position: absolute;
+  top: 150px;
+  left: 985px;
+}
+
+#section01 .menuhover {
+  position: absolute;
+  top: 1000px;
+  left: 100px;
+
+}
+
+#section01 .menumenu {
+  opacity: 50%;
+}
+
+#section01 .menumenu li+li {
+margin-top: 50px;
+}
+
+#section01 .intro  {
+  left: 70px;
+  }
+
+ #section01 .pages {
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
+
+#section01 .link {
+  position: absolute;
+  top: 12800px;
+  left: 700px;
+}
+
+#section01 .link2 {
+  position: absolute;
+  top: 150px;
+  left: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+  
+  .section02 {
+    background: white;
+    height: 100vh;
+  }
+
+  .page {
+    position: absolute;
+  }
+
+
+}
